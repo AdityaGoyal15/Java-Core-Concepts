@@ -86,11 +86,11 @@ encapsulated within the BankAccount object and cannot be directly accessed or mo
 
 ### Benefits of Encapsulation
 
-- Data Hiding: Encapsulation hides the internal state of an object and only exposes a well-defined interface for
+- **Data Hiding**: Encapsulation hides the internal state of an object and only exposes a well-defined interface for
   interacting with it, preventing direct access and manipulation of the object's data.
-- Modularity: Encapsulation promotes modularity by bundling related data and methods within a single unit (object),
+- **Modularity**: Encapsulation promotes modularity by bundling related data and methods within a single unit (object),
   making it easier to understand, maintain, and extend the code.
-- Security: Encapsulation enhances security by restricting access to sensitive data and ensuring that data integrity
+- **Security**: Encapsulation enhances security by restricting access to sensitive data and ensuring that data integrity
   is maintained through controlled access points.
 
 Overall, encapsulation is a fundamental concept in object-oriented programming that promotes data hiding, modularity,
