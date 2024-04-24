@@ -31,7 +31,7 @@ Overall, the Java Memory Model provides a set of rules and guidelines for writin
 Java programs. Understanding these concepts is crucial for writing thread-safe code and avoiding concurrency issues
 such as data races, deadlocks, and inconsistent state.
 
-n JDK 8, one of the significant changes related to memory management was the removal of the Permanent Generation (
+In JDK 8, one of the significant changes related to memory management was the removal of the Permanent Generation (
 PermGen) space. The PermGen space was a special area of the Java heap used to store metadata about classes, methods, and
 other runtime artifacts, including interned strings and class metadata.
 
