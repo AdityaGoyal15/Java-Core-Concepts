@@ -48,7 +48,7 @@ several types of variables with different scopes and rules:
       }
       ```
 
-### Rules:
+### Rules
 
 - Local variables must be initialized before they are used.
 - Instance and class variables are automatically initialized with default values if not explicitly initialized. Numeric
