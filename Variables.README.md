@@ -10,7 +10,7 @@ several types of variables with different scopes and rules:
     - **Lifetime**: Local variables exist only within the block in which they are declared. They are created when the
       block is entered and destroyed when the block is exited.
         - **Example**:
-          ``` 
+          ```java
           public void exampleMethod() {
             int localVar = 10; // localVar is a local variable
             System.out.println(localVar);
@@ -21,7 +21,7 @@ several types of variables with different scopes and rules:
       body.
     - **Lifetime**: Parameters exist for the duration of the method invocation.
     - **Example**:
-      ```
+      ```java
       public void exampleMethod(int param) { // param is a parameter
         System.out.println(param);
       }
@@ -31,7 +31,7 @@ several types of variables with different scopes and rules:
       associated with instances (objects) of the class and are accessible to all methods within the class.
     - **Lifetime**: Instance variables exist for the lifetime of the object to which they belong.
     - **Example**:
-      ```
+      ```java
         public class MyClass {
           int instanceVar; // instanceVar is an instance variable
         }
@@ -42,7 +42,7 @@ several types of variables with different scopes and rules:
       accessible to all methods within the class and its subclasses.
     - **Lifetime**: Class variables exist for the lifetime of the program.
     - **Example**:
-      ```
+      ```java
       public class MyClass {
         static int classVar; // classVar is a class variable
       }
