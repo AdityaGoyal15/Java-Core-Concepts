@@ -287,7 +287,7 @@ Thread thread = new Thread(() -> {
 thread.start(); // Start the thread
 try{
     thread.join(); // Wait for the thread to complete
-} catch(InterruptedException e){
+} catch(InterruptedException e) {
     e.printStackTrace();
 }
 ```
@@ -298,9 +298,9 @@ The sleep() method pauses the execution of the current thread for a specified am
 execute. It can be used for simple thread synchronization or to introduce delays in thread execution.
 
 ```java
-try{
+try {
     Thread.sleep(1000); // Pause execution for 1 second
-} catch(InterruptedException e){
+} catch(InterruptedException e) {
     e.printStackTrace();
 }
 ```
@@ -336,7 +336,7 @@ The isInterrupted() method checks whether the current thread has been interrupte
 been interrupted; otherwise, it returns false.
 
 ```java
-if(Thread.currentThread().isInterrupted()) {
+if (Thread.currentThread().isInterrupted()) {
     // Thread has been interrupted
 }
 ```
