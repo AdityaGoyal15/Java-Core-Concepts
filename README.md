@@ -1,4 +1,4 @@
-## Go through the readme files in the following order:
+## Please read the following files in order for better understanding of concepts:
 
 - JMM.README.md
 - Object-Oriented-Programming.README.md
