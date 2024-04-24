@@ -8,8 +8,8 @@
 - Polymorphism.README.md
 - Object.README.md
 - Variables.README.md
-- Equals-And-Hashcode.README.md
 - Static-Keyword.README.md
+- Equals-And-Hashcode.README.md
 - Method-Overloading-And-Overriding.README.md
 - Concurrency.README.md
 - Multithreading.README.md
