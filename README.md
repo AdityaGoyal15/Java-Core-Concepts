@@ -9,5 +9,6 @@
 - Method-Overloading-And-Overriding.README.md
 - Variables.README.md
 - Static-Keyword.README.md
+- Equals-And-Hashcode.README.md
 - Concurrency.README.md
 - Multithreading.README.md
