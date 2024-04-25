@@ -168,3 +168,195 @@ collision resolution.
 - **Capacity**: The initial capacity and load factor can be specified when creating a HashSet or HashMap. Choosing
   appropriate values for these parameters can affect performance and memory usage.
 
+### Creating a Custom Collection in Java
+
+To create a custom collection in Java, you need to implement the Collection interface or extend one of its
+sub-interfaces such as List, Set, or Map. Additionally, you may need to implement the Iterator interface to provide an
+iterator for your collection. Let's go through the steps to create a custom collection:
+
+**Decide the Type of Collection**
+
+Decide whether you want to create a List, Set, or Map, or if you want to implement a custom collection that doesn't fit
+into these categories.
+
+**Implement the Collection Interface**
+
+If you're creating a custom List, Set, or Map, you'll need to implement the respective interface (List, Set, or Map) and
+provide implementations for all its methods. If you're creating a custom collection that does not fit into these
+categories, you can directly implement the Collection interface.
+
+```java
+public class CustomCollection<T> implements Collection<T> {
+    // Implement all methods of the Collection interface
+}
+```
+
+**Implement the Iterator Interface (if needed)**
+
+If your collection needs to be iterable, you'll need to implement the Iterator interface to provide an iterator for your
+collection.
+
+```java
+public class CustomCollection<T> implements Collection<T> {
+    // Implement all methods of the Collection interface
+
+    @Override
+    public Iterator<T> iterator() {
+        return new CustomIterator<T>(); // Implement CustomIterator class
+    }
+}
+```
+
+**Implement CustomIterator Class (if needed)**
+
+If you've implemented the iterator() method, you'll need to provide an implementation for the CustomIterator class.
+
+```java
+public class CustomIterator<T> implements Iterator<T> {
+    // Implement all methods of the Iterator interface
+}
+```
+
+**Test Your Custom Collection**
+
+Once you've implemented your custom collection, make sure to thoroughly test it to ensure that it behaves as expected
+and complies with the contracts of the interfaces it implements.
+
+```java
+import java.util.Collection;
+import java.util.Iterator;
+
+public class CustomCollection<T> implements Collection<T> {
+
+    // Implement all methods of the Collection interface
+
+    @Override
+    public int size() {
+        // Implementation
+    }
+
+    @Override
+    public boolean isEmpty() {
+        // Implementation
+    }
+
+    // Implement other methods such as add(), remove(), contains(), etc.
+
+    @Override
+    public Iterator<T> iterator() {
+        return new CustomIterator<T>(); // Implement CustomIterator class
+    }
+
+    private class CustomIterator<T> implements Iterator<T> {
+        // Implement all methods of the Iterator interface
+    }
+}
+```
+
+#### More Detailed Example
+
+Let's create a more detailed example of a custom collection that implements the Collection interface and provides
+implementations for methods like add, remove, contains, and others.
+
+```java
+import java.util.Collection;
+import java.util.Iterator;
+
+public class CustomCollection<T> implements Collection<T> {
+    private Object[] elements;
+    private int size;
+    private static final int DEFAULT_CAPACITY = 10;
+
+    public CustomCollection() {
+        this.elements = new Object[DEFAULT_CAPACITY];
+        this.size = 0;
+    }
+
+    // Implementing Collection interface methods
+
+    @Override
+    public int size() {
+        return size;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    @Override
+    public boolean contains(Object o) {
+        for (int i = 0; i < size; i++) {
+            if (elements[i].equals(o)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean add(T element) {
+        if (size == elements.length) {
+            // If array is full, resize it
+            resize();
+        }
+        elements[size++] = element;
+        return true;
+    }
+
+    @Override
+    public boolean remove(Object o) {
+        for (int i = 0; i < size; i++) {
+            if (elements[i].equals(o)) {
+                // Found the element to remove
+                // Shift elements to the left to remove the element
+                System.arraycopy(elements, i + 1, elements, i, size - i - 1);
+                elements[--size] = null; // Set last element to null
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        return new CustomIterator<>();
+    }
+
+    // Other Collection interface methods (addAll, removeAll, clear, etc.) could be implemented
+    // similarly
+
+    // Helper method to resize the array when it's full
+    private void resize() {
+        int newCapacity = elements.length * 2;
+        Object[] newArray = new Object[newCapacity];
+        System.arraycopy(elements, 0, newArray, 0, size);
+        elements = newArray;
+    }
+
+    // CustomIterator class
+    private class CustomIterator<T> implements Iterator<T> {
+        private int cursor;
+
+        @Override
+        public boolean hasNext() {
+            return cursor < size;
+        }
+
+        @Override
+        @SuppressWarnings("unchecked")
+        public T next() {
+            if (hasNext()) {
+                return (T) elements[cursor++];
+            } else {
+                throw new IllegalStateException("No more elements to iterate");
+            }
+        }
+    }
+}
+```
+
+This CustomCollection class implements the Collection interface and provides implementations for methods like add,
+remove, contains, and iterator. It also includes a CustomIterator inner class to provide an iterator for the collection.
+
+You can now use this CustomCollection class to create custom collections with your desired behavior and functionality.
