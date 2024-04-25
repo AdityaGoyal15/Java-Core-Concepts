@@ -15,7 +15,7 @@
 - Equals-And-Hashcode.README.md
 - Java-IO-Operations.README.md
 - Serialization.README.md
-- Collections.README.md (TODO basic, concurrent, internal working etc)
+- Collections.README.md
 - Exceptions.README.md (TODO propagation concepts)
 - Concurrency.README.md (TODO explore more about locks)
 - Multithreading.README.md
