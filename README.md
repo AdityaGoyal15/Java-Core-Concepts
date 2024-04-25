@@ -5,7 +5,7 @@ Programming (OOP), Exceptions, Collections, Multithreading, I/O operations, and 
 detail through individual README files, providing clear explanations, examples, and best practices to help developers
 gain a deeper understanding of Java programming fundamentals.**
 
-### Please read the following files in order for better understanding of concepts:
+**Please read the following files in order for better understanding of concepts:**
 
 - JMM.README.md
 - Objects.README.md
