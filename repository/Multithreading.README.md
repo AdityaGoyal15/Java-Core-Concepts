@@ -256,10 +256,14 @@ thread, initializes the thread, and invokes the run() method of the thread. It s
 the run() method directly to start a thread; instead, use the start() method.
 
 ```java
-Thread thread = new Thread(() -> {
-    // Thread logic
-});
-thread.start(); // Start the thread
+public class Main {
+    public static void main(String[] args) {
+        Thread thread = new Thread(() -> {
+            // Thread logic
+        });
+        thread.start(); // Start the thread
+    }
+}
 ```
 
 **run()**
@@ -281,14 +285,18 @@ The join() method allows one thread to wait for the completion of another thread
 thread on which it is called completes its execution or a specified timeout occurs.
 
 ```java
-Thread thread = new Thread(() -> {
-    // Thread logic
-});
-thread.start(); // Start the thread
-try{
-    thread.join(); // Wait for the thread to complete
-} catch(InterruptedException e) {
-    e.printStackTrace();
+public class Main {
+    public static void main(String[] args) {
+        Thread thread = new Thread(() -> {
+            // Thread logic
+        });
+        thread.start(); // Start the thread
+        try {
+            thread.join(); // Wait for the thread to complete
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
 ```
 
@@ -298,10 +306,14 @@ The sleep() method pauses the execution of the current thread for a specified am
 execute. It can be used for simple thread synchronization or to introduce delays in thread execution.
 
 ```java
-try {
-    Thread.sleep(1000); // Pause execution for 1 second
-} catch(InterruptedException e) {
-    e.printStackTrace();
+public class Main {
+    public static void main(String[] args) {
+        try {
+            Thread.sleep(1000); // Pause execution for 1 second
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
 ```
 
@@ -312,7 +324,11 @@ the same priority to execute. It is a hint to the scheduler that the thread is w
 CPU.
 
 ```java
-Thread.yield(); // Yield the CPU to other threads
+public class Main {
+    public static void main(String[] args) {
+        Thread.yield(); // Yield the CPU to other threads
+    }
+}
 ```
 
 **interrupt()**
@@ -321,13 +337,17 @@ The interrupt() method is used to interrupt the execution of a thread. It sets t
 causing it to throw an InterruptedException if it is in a blocked or waiting state.
 
 ```java
-Thread thread = new Thread(() -> {
-    while (!Thread.currentThread().isInterrupted()) {
-        // Thread logic
+public class Main {
+    public static void main(String[] args) {
+        Thread thread = new Thread(() -> {
+            while (!Thread.currentThread().isInterrupted()) {
+                // Thread logic
+            }
+        });
+        thread.start(); // Start the thread
+        thread.interrupt(); // Interrupt the thread
     }
-});
-thread.start(); // Start the thread
-thread.interrupt(); // Interrupt the thread
+}
 ```
 
 **isInterrupted()**
@@ -336,8 +356,12 @@ The isInterrupted() method checks whether the current thread has been interrupte
 been interrupted; otherwise, it returns false.
 
 ```java
-if (Thread.currentThread().isInterrupted()) {
-    // Thread has been interrupted
+public class Main {
+    public static void main(String[] args) {
+        if (Thread.currentThread().isInterrupted()) {
+            // Thread has been interrupted
+        }
+    }
 }
 ```
 
