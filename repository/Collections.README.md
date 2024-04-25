@@ -28,7 +28,7 @@ class Main {
   operations but slower random access compared to ArrayList.
 
 ```java
-class main {
+class Main {
     public static void main(String[] args) {
         List<String> linkedList = new LinkedList<>();
         linkedList.add("Apple");
@@ -46,7 +46,7 @@ The Set interface represents a collection that contains no duplicate elements.
 - **HashSet**: Implements the Set interface using a hash table. It does not maintain any order of elements.
 
 ```java
-public class main {
+public class Main {
     public static void main(String[] args) {
         Set<String> hashSet = new HashSet<>();
         hashSet.add("Apple");
@@ -60,7 +60,7 @@ public class main {
 - **TreeSet**: Implements the Set interface using a Red-Black tree. It maintains elements in sorted order.
 
 ```java
-public class main {
+public class Main {
     public static void main(String[] args) {
         Set<String> treeSet = new TreeSet<>();
         treeSet.add("Apple");
@@ -79,7 +79,7 @@ The Map interface represents a collection of key-value pairs.
   of elements.
 
 ```java
-public class main {
+public class Main {
     public static void main(String[] args) {
         Map<Integer, String> hashMap = new HashMap<>();
         hashMap.put(1, "Apple");
@@ -94,7 +94,7 @@ public class main {
   sorted order.
 
 ```java
-public class main {
+public class Main {
     public static void main(String[] args) {
         Map<Integer, String> treeMap = new TreeMap<>();
         treeMap.put(1, "Apple");
@@ -117,7 +117,7 @@ Java provides synchronized versions of collection classes to support concurrent 
 - **Collections.synchronizedMap()**: Wraps a HashMap or TreeMap to make it thread-safe.
 
 ```java
-public class main {
+public class Main {
     public static void main(String[] args) {
         List<String> synchronizedList = Collections.synchronizedList(new ArrayList<>());
         Map<Integer, String> synchronizedMap = Collections.synchronizedMap(new HashMap<>());
