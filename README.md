@@ -8,7 +8,10 @@ gain a deeper understanding of Java programming fundamentals.**
 **Please read the following files in order for better understanding of concepts:**
 
 - [Java Memory Model](repository/JMM.README.md)
+- [Classes](/repository/Classes.README.md)
+- [Variables](repository/Variables.README.md)
 - [Objects](repository/Objects.README.md)
+- [Constructors](repository/Constructors.README.md)
 - [Object Oriented Programming](repository/Object-Oriented-Programming.README.md)
 - [Abstraction](repository/Abstraction.README.md)
 - [Encapsulation](repository/Encapsulation.README.md)
@@ -16,9 +19,7 @@ gain a deeper understanding of Java programming fundamentals.**
 - [Polymorphism](repository/Polymorphism.README.md)
 - [Access Modifiers](repository/Access-Modifiers.README.md)
 - [Static Keyword](repository/Static-Keyword.README.md)
-- [Variables](repository/Variables.README.md)
 - [Method Overloading and Overriding](repository/Method-Overloading-And-Overriding.README.md)
-- [Constructors](repository/Constructors.README.md)
 - [Equals and Hashcode](repository/Equals-And-Hashcode.README.md)
 - [IO Operations](repository/Java-IO-Operations.README.md)
 - [Serialization](repository/Serialization.README.md)
