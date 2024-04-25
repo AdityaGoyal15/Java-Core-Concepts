@@ -7,22 +7,22 @@ gain a deeper understanding of Java programming fundamentals.**
 
 **Please read the following files in order for better understanding of concepts:**
 
-- JMM.README.md
-- Objects.README.md
-- Object-Oriented-Programming.README.md
-- Abstraction.README.md
-- Encapsulation.README.md
-- Inheritance.README.md
-- Polymorphism.README.md
-- Access-Modifiers.README.md
-- Static-Keyword.README.md
-- Variables.README.md
-- Method-Overloading-And-Overriding.README.md
-- Constructors.README.md
-- Equals-And-Hashcode.README.md
-- Java-IO-Operations.README.md
-- Serialization.README.md
-- Collections.README.md
-- Exceptions.README.md
-- Concurrency.README.md (TODO explore more about locks)
-- Multithreading.README.md
+- [file](repository/JMM.README.md)
+- [file](repository/Objects.README.md)
+- [file](repository/Object-Oriented-Programming.README.md)
+- [file](repository/Abstraction.README.md)
+- [file](repository/Encapsulation.README.md)
+- [file](repository/Inheritance.README.md)
+- [file](repository/Polymorphism.README.md)
+- [file](repository/Access-Modifiers.README.md)
+- [file](repository/Static-Keyword.README.md)
+- [file](repository/Variables.README.md)
+- [file](repository/Method-Overloading-And-Overriding.README.md)
+- [file](repository/Constructors.README.md)
+- [file](repository/Equals-And-Hashcode.README.md)
+- [file](repository/Java-IO-Operations.README.md)
+- [file](repository/Serialization.README.md)
+- [file](repository/Collections.README.md)
+- [file](repository/Exceptions.README.md)
+- [file](repository/Concurrency.README.md) (TODO explore more about locks)
+- [file](repository/Multithreading.README.md)
