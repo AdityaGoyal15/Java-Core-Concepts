@@ -10,7 +10,12 @@
 - Variables.README.md
 - Access-Modifiers.README.md
 - Static-Keyword.README.md
+- Constructors.README.md (TODO)
 - Equals-And-Hashcode.README.md
 - Method-Overloading-And-Overriding.README.md
-- Concurrency.README.md
+- Java-IO-Operations.README.md
+- Serialization.README.md
+- Collections.README.md (TODO basic, concurrent, internal working etc)
+- Exceptions.README.md (TODO propagation concepts)
+- Concurrency.README.md (TODO explore more about locks)
 - Multithreading.README.md
