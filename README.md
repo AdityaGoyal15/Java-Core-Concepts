@@ -16,6 +16,6 @@
 - Java-IO-Operations.README.md
 - Serialization.README.md
 - Collections.README.md
-- Exceptions.README.md (TODO propagation concepts)
+- Exceptions.README.md
 - Concurrency.README.md (TODO explore more about locks)
 - Multithreading.README.md
