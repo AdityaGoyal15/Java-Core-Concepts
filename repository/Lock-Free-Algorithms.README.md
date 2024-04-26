@@ -19,13 +19,13 @@ There are two main categories of lock-free algorithms:
   algorithms, obstruction-free algorithms do not guarantee progress within a finite number of steps, but they provide
   progress guarantees under certain conditions, making them suitable for scenarios with moderate contention.
 
-Lock-free algorithms often use atomic operations, compare-and-swap (CAS) operations, or other low-level concurrency
+**Lock-free algorithms often use atomic operations, compare-and-swap (CAS) operations, or other low-level concurrency
 primitives provided by hardware or software platforms. These operations ensure that updates to shared variables are
-performed atomically without requiring explicit locks.
+performed atomically without requiring explicit locks.**
 
-Examples of lock-free algorithms include lock-free linked lists, lock-free queues, and lock-free stacks. These data
+**Examples of lock-free algorithms include lock-free linked lists, lock-free queues, and lock-free stacks. These data
 structures use atomic operations to manage concurrent access without the need for global locks, allowing multiple
-threads to perform insertions, deletions, and other operations concurrently.
+threads to perform insertions, deletions, and other operations concurrently.**
 
 Lock-free algorithms are preferred in high-performance, highly concurrent systems where scalability and responsiveness
 are critical. However, designing and implementing lock-free algorithms can be challenging due to the complexity of
